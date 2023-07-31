@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    font-size: 16px;
+}
+
+.container {
+    padding: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+    display: inline-block;
+    /* margin-bottom: 4.1rem; */
+}
+
+img.logo {
+    width: 130px;
+}
+
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 4.1rem 0;
+}
+
+div.illustration {
+    width: 100%;
+    /* margin-bottom: 4rem; */
+}
+
+div.text {
+    text-align: center;
+    width: 100%;
+}
+
+.text h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    /* padding: 0 1rem; */
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+
+}
+
+.text p {
+    color: rgb(199, 199, 199);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-size: 17px;
+
+}
+
+.text a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+    width: 80%;
+    margin: 0 auto;
+    color: var(--Violet);
+    background-color: white;
+    border-radius: 50px;
+    padding: 12px 0;
+    box-shadow: 0px 2px 7px 0px hsl(257, 40%, 23%);
+    transition: all 0.3s ease;
+}
+
+.text a:hover {
+    background-color: var(--SoftMagenta);
+    color: white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    border: 1px solid var(--SoftMagenta);
+    color: var(--SoftMagenta);
+}
+
+@media only screen and (min-width:769px) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container {
+        height: 100vh;
+        padding: 3rem;
+    }
+
+    img.logo {
+        width: 250px;
+    }
+
+    div.wrapper {
+        flex-direction: row;
+        margin: 3.7rem 0 2rem;
+        gap: 3rem;
+    }
+
+    div.illustration {
+        width: 62%;
+        height: auto;
+
+    }
+
+    img.main-img {
+        width: 100%;
+        display: inherit;
+    }
+
+    div.text {
+        text-align: left;
+        width: 38%;
+    }
+
+    .text h2 {
+        font-size: 41px;
+        margin-bottom: 1.5rem;
+    }
+
+    .text p {
+        font-size: 17.5px;
+    }
+
+    .text a {
+        width: 40%;
+        text-align: center;
+        margin: 0;
+        padding: 18px 0;
+        font-size: 20px;
+
+    }
+
+    .footer {
+        justify-content: flex-end;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer a {
+        width: 45px;
+        height: 45px;
+    }
+}
